@@ -4,16 +4,18 @@
 http://yehnan.blogspot.com/2016/04/arduino-yunopenwrt-yun.html
 
 
-2. 
-設定Wifi  連到AP
+2. 設定Wifi  連到AP
 教學：http://yehnan.blogspot.com/2016/04/arduino-yunwi-fi.html 
 
 
+
 3.用Arduino IDE找IP  (電腦也要連到相同一台AP)
- 
+
+
  
 3. 用ssh軟體連入該IP (例如putty連入)  
 帳號為 root   密碼是  arduino
+
 
 4. 依序執行下列指令
 opkg update
