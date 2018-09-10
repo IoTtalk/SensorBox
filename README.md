@@ -30,36 +30,33 @@ http://yehnan.blogspot.com/2016/04/arduino-yunopenwrt-yun.html
 
     easy_install https://files.pythonhosted.org/packages/ae/e8/2340d46ecadb1692a1e455f13f75e596d4eab3d11a57446f08259dee8f02/pip-10.0.1.tar.gz#sha256=f2bd08e0cd1b06e10218feaf6fef299f473ba706582eb3bd9d52203fdbd7ee68
 
-
-6. 依序執行下列指令
-
     pip install requests
 
     opkg install openssh-sftp-server
 
 
-7. 用SSH FTP上傳下列連結中的  *.py 到root的home目錄下
+6. 用SSH FTP上傳下列連結中的  *.py 到root的home目錄下
 
 https://github.com/IoTtalk/SensorBox
 
 
-8. 修改custom.py 中第三行，改為所使用的IoTtalk Server IP 或是 DomainName
+7. 修改custom.py 中第三行，改為所使用的IoTtalk Server IP 或是 DomainName
 
     ServerIP = 'http://IP:9999'   一般連線
     ServerIP = 'https://DomainName'  加密連線
 
-9. 在root的home目錄下執行下列指令
+8. 在root的home目錄下執行下列指令
 
 
     python autoStart.py
 
 
-11. 用IDE將 下列連結中的 ino檔燒進 Arduino
+9. 用IDE將 下列連結中的 ino檔燒進 Arduino
 
 https://github.com/IoTtalk/SensorBox/tree/master/Firmware
 
 
-12. 斷電重開，等2分30秒後，板子上的紅燈亮起，表示該板子已成功註冊到IoTtalk上，已經可以使用了。
+10. 斷電重開，等2分30秒後，板子上的紅燈亮起，表示該板子已成功註冊到IoTtalk上，已經可以使用了。
 
 
 
