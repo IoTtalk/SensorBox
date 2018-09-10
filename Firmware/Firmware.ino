@@ -24,7 +24,7 @@ int BugCounter = 0;
 int PreviousBugCounter = 9999;
 long suspendTimestamp = millis();
 void blink(){//Bugs
-    if (millis()-suspendTimestamp > 1000){
+    if (millis()-suspendTimestamp > 180000){
         BugCounter += 1;
         suspendTimestamp = millis();
         Serial.println("xxxxxxxxxxxxxxxxx");
