@@ -60,7 +60,10 @@ https://github.com/IoTtalk/SensorBox/tree/master/Firmware
 
 
 
-PS. Arduino Yun Rev2 安裝rquests方法如下
+
+
+
+PS. Arduino Yun Rev2 安裝requests方法如下
 
     opkg update
     
