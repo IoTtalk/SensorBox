@@ -1,11 +1,11 @@
 import DAN
 
-ServerIP = 'X.X.X.X'   #=None:AutoSearch, or ='IP':Connect to this IP
+ServerIP = 'http://IP:9999' # or = 'https://DomainName' 
 Comm_interval = 15 # unit:second
 
 def profile_init():
     DAN.profile['dm_name']='SensorBox'
-    DAN.profile['d_name']= 'Wu2' #DAN.profile['dm_name']+'.'+DAN.get_mac_addr()[-4:]
+    DAN.profile['d_name']= 'Sensor' #DAN.profile['dm_name']+'.'+DAN.get_mac_addr()[-4:]
 
 def odf():  # int only
     return []
