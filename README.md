@@ -26,45 +26,27 @@ opkg install distribute
 
 opkg install python-openssl
 
-easy_install http://pcs.csie.nctu.edu.tw/pip-10.0.1.tar.gz
+easy_install https://files.pythonhosted.org/packages/ae/e8/2340d46ecadb1692a1e455f13f75e596d4eab3d11a57446f08259dee8f02/pip-10.0.1.tar.gz#sha256=f2bd08e0cd1b06e10218feaf6fef299f473ba706582eb3bd9d52203fdbd7ee68
 
 
-6. 在home目錄下新增 .pip 目錄，其下建立   pip.conf  檔案(亦即~/.pip/pip.conf)，依序執行下列指令
-
-mkdir .pip
-
-cd .pip
-
-vim pip.config
-
-
-內容填入  
-
-[global]
-
-trusted-host=mirrors.aliyun.com
-
-index-url=http://mirrors.aliyun.com/pypi/simple/
-
-
-7. 依序執行下列指令
+6. 依序執行下列指令
 
 pip install requests
 
 opkg install openssh-sftp-server
 
 
-8. 用SSH FTP上傳下列連結中的  *.py 到root的home目錄下
+7. 用SSH FTP上傳下列連結中的  *.py 到root的home目錄下
 
 https://github.com/IoTtalk/SensorBox
 
 
-9. 修改custom.py 中第三行，X.X.X.X改為所使用的IoTtalk Server IP
+8. 修改custom.py 中第三行，X.X.X.X改為所使用的IoTtalk Server IP
 
 ServerIP = 'X.X.X.X'
 
 
-10. 在root的home目錄下執行下列指令
+9. 在root的home目錄下執行下列指令
 
 python autoStart.py
 
