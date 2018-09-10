@@ -1,5 +1,7 @@
 # SensorBox
 
+0. 要在IoTtalk上面使用，請先在IoTtalk上建立好Device Model。Model詳細資訊請見custom.py
+
 1. ArduinoYun 1代全新板子上的韌體存有bug，所以根據下列網站教學，更新到1.5.3 (本動作一塊板子僅需做一次即可，要小心過程不要斷電，會變磚)
 
 http://yehnan.blogspot.com/2016/04/arduino-yunopenwrt-yun.html
