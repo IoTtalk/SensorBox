@@ -43,9 +43,10 @@ http://yehnan.blogspot.com/2016/04/arduino-yunopenwrt-yun.html
 https://github.com/IoTtalk/SensorBox
 
 
-8. 修改custom.py 中第三行，X.X.X.X改為所使用的IoTtalk Server IP
+8. 修改custom.py 中第三行，改為所使用的IoTtalk Server IP 或是 DomainName
 
-    ServerIP = 'X.X.X.X'
+    ServerIP = 'http://IP:9999'   一般連線
+    ServerIP = 'https://DomainName'  加密連線
 
 9. 在root的home目錄下執行下列指令
 
