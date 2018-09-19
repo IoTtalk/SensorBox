@@ -2,6 +2,8 @@ import requests
 
 ENDPOINT = None
 TIMEOUT=10
+
+requests.packages.urllib3.disable_warnings()
 IoTtalk = requests.Session()
 passwordKey = None
 
